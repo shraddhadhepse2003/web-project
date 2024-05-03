@@ -11,9 +11,7 @@ ul{
 li{
     display: inline-block;
     /*width: 100px;*/
-    margin-right:25px;
-    
-    
+    margin-right:25px;   
 }
 nav{
     background-color: #1f222e;
@@ -25,6 +23,9 @@ a{
     color: white;
     
 }
+a:hover{
+    color: #24ABEA;
+}
 body{
     background-color: black;
 }
@@ -35,16 +36,17 @@ body{
     top: 10%;
     left: 60%;
     padding: 10px;
+   
 }
 .p1{
-    margin-left: 30%;
+    margin-left: 40%;
     color: white;
     margin-top: 15%;
     font-size: 40px;
     font-family: 'Metal Mania';
 }
 .p2{
-    margin-left: 20%;
+    margin-left: 30%;
     color: white;
     font-size:40px ;
     font-family: 'Metal Mania';
@@ -61,11 +63,17 @@ body{
 #btn1{
     font-size: 20px;
     background-color:#24ABEA ;
-    margin-left: 300px;
+    margin-left: 550px;
     margin-top: 20px;
     border-radius: 20px;
     width: 150px;
     /*color: white;*/
+}
+.profilepic{
+    height: 470px;     /*500  400*/
+    width: 380px;
+    margin-top: 30px;
+    border-radius: 10%;
 }
 
   
