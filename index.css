@@ -30,32 +30,63 @@ body{
     background-color: black;
 }
 
-.img1{
-    /*margin-left: 60%;*/
+/*.img1{
+    margin-left: 60%;remove
     position: absolute;
     top: 10%;
     left: 60%;
     padding: 10px;
    
-}
+}*/
 .p1{
-    margin-left: 40%;
+    /*margin-left: 40%;*/
     color: white;
     margin-top: 15%;
+    /*margin-left: 400px;*/
     font-size: 40px;
     font-family: 'Metal Mania';
 }
 .p2{
-    margin-left: 30%;
+    /*margin-left: 30%;*/
     color: white;
     font-size:40px ;
+    /*margin-left: 300px;*/
     font-family: 'Metal Mania';
     
 }
 .div1{
     line-height: 70px;
+    float: left;
+    display: inline-block;
+    /*border: 2px solid white;*/
+    margin-top: 130px;
+    margin-left: 150px;
+    box-sizing: border-box;
+    text-align: center;
+    width: 40%;
 }
-
+.bgdiv{
+    background-color: #24ABEA/*#11DDE9*/ ;
+    height: 640px;
+    width: 32%;
+    float: right;
+    position: relative;
+}
+.img1{
+   /* border: 10px solid black;
+    background-color: red;*/
+    
+    height: 500px;
+    width: 500px;
+    float: right;
+    position: absolute;
+    margin-left: 800px;
+    margin-top: 70px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .s1{
     color: #24ABEA;
     /*text-shadow: 0px 0px 5px black;*/
@@ -63,17 +94,29 @@ body{
 #btn1{
     font-size: 20px;
     background-color:#24ABEA ;
-    margin-left: 550px;
+   /* margin-left: 480px;*/
     margin-top: 20px;
     border-radius: 20px;
     width: 150px;
     /*color: white;*/
 }
-.profilepic{
-    height: 470px;     /*500  400*/
-    width: 380px;
-    margin-top: 30px;
-    border-radius: 10%;
+#cv1:hover{
+    color: black;
 }
+.profilepic{
+    height:400px;     /*500  400 390*/
+    width: 400px;
+    /*margin-top: 80px;
+    margin-left: 150px;*/
+    border-radius: 50%;
+    /*position: relative;
+    top: 30px;
+    left: 70px;*/
+    box-sizing: border-box;
+    border: 25px solid black;
+}
+
+
+
 
   

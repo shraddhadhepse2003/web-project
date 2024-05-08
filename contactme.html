@@ -5,20 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <style>
-        
-        div{
+        *{
+            box-sizing: border-box;
+            color: white;
+        }
+        .cont{
             background-color: black;
             /*border: 2px solid white;*/
-            height: 400px;
-            width: 700px;
-            margin: 100px auto;
+            height: 350px;
+            width: 500px;
+            /*margin: 100px auto;*/
+            margin-top: 50px;
             color: white;
-            /*padding-left: 300px;
-            padding-top: 50px;*/
+            margin-left: 800px;
+            padding-left: 50px;
             box-sizing: border-box;
             
         }
+
+        .cnt{
+        height: 250px;/*350*/
+        width: 500px;
+        /*border: 2px solid white;*/
+        border-bottom: 2px solid white;
+        box-sizing: border-box;
+        position: absolute;
+        left: 200px;
+        color: white;
+        padding-top: 90px;
+        padding-left: 70px;
+        background-color: rgb(0,0,0,1);
+        margin-top: 80px;
+       }
+       .cnt>p>i{
+        margin-right: 10px;
+       }
+
         body{
             background-color: black;
            
@@ -28,12 +53,8 @@
             padding-top: 15px;
             
         }
-        h1{
-            color: white;
-            text-align: center;
-            padding-top: 20px;
-            
-        }
+       
+        
         button{
             background-color: transparent;
             color: white;
@@ -41,7 +62,7 @@
             border: 2px solid white;
             width: 90px;
             height: 30px;
-            margin-left: 150px;
+            margin-left: 80px;
             margin-top: 40px;
         }
         button:hover{
@@ -50,9 +71,50 @@
         input{
             background-color: transparent;
             border: 1px solid white;
-            width: 250px;
-            height: 25px;
+            width: 350px;
+            height: 30px;
         }
+        
+       #i1{
+           height: 40px;
+           width: 40px;
+           float: left;
+           
+       }
+       #p1{
+        float: left;
+        
+       }
+       .both{
+        margin-left: 27px;
+       }
+       
+       .logos{
+        display: flex;
+        font-size: 30px;
+        
+       }
+       #i1{
+        margin-left: 40px;
+        margin-top: 45px;
+       }
+       #l1{
+        margin-top: 45px;
+       }
+       #hd{
+        text-align: center;
+        margin-top: -50px;
+        
+       }
+        .kabir{
+            border-bottom: 2px solid white;
+            height: 90px;
+            width: 100%;
+            text-align: center;
+            font-size: 25px;
+            padding-top: 20px;
+        }
+        
     </style>
 </head>
 <body>
@@ -65,41 +127,44 @@
             <li><b><a href="contactme.html">Contact Me</a></li>
         </ul>
     </nav>
-    <div>
-        <h1>Contact Me</h1>
-    <form>
-        <table width="30%">
-            <tr><td>
+    <div class="kabir"><h1 id="hd1">Contact</h1></div>
+    
+    <div  class="cnt">
+        <!--<h1 id="hd">Contact Me</h1><br><br>-->
+       <p id="email"><i class="fa-regular fa-envelope"></i>EmailID</p>
+       <p class="both">shraddhadhepse2003@gmail.com</p><br>
+       <p><i class="fa-regular fa-address-card"></i>contactNo</p>
+       <p class="both">7083950010</p><br><br>
+
+       <div class="logos">
+        <a id="i1"><i class="fa-brands fa-instagram"></i></a>
+        <a><i id="l1" class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+    </div>
+       
+    
+    
+
+    <div class="cont" >
         <label for="name">
             Name:
-        </label></td>
-        <td>
-        <input type="text"/>
-           </td>
-           </tr>
-           <tr>
-            <td>
+        </label><br><br>
+        <input type="text"/><br><br>
+          
         <label for="email">
             Email ID:
-        </label></td>
-        <td>
-        <input type="email"/>
-    </td>
-           </tr>
-           <tr><td>
+        </label><br><br>
+        <input type="email"/><br><br>
+    
         <label for="contact">
             Contact No:
-        </label></td>
-        <td>
-        <input type="tel"/>
-    </td>
-         </tr>
-         <tr><td>
-        <button type="submit">Submit</button>
-    </td>
-    </tr>
-    </table>
-    </form>
+        </label><br><br>
+        <input type="tel"/><br><br>
+    
+        <button type="submit">Send</button>
+    
+    
+    
 </div>
 </body>
 </html>
