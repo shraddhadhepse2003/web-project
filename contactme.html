@@ -106,7 +106,7 @@
         margin-top: -50px;
         
        }
-        .kabir{
+        .ct{
             border-bottom: 2px solid white;
             height: 90px;
             width: 100%;
@@ -127,7 +127,7 @@
             <li><b><a href="contactme.html">Contact Me</a></li>
         </ul>
     </nav>
-    <div class="kabir"><h1 id="hd1">Contact</h1></div>
+    <div class="ct"><h1 id="hd1">Contact</h1></div>
     
     <div  class="cnt">
         <!--<h1 id="hd">Contact Me</h1><br><br>-->
@@ -137,8 +137,8 @@
        <p class="both">7083950010</p><br><br>
 
        <div class="logos">
-        <a id="i1"><i class="fa-brands fa-instagram"></i></a>
-        <a><i id="l1" class="fa-brands fa-linkedin-in"></i></a>
+        <a id="i1" href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/login" target="_blank"><i id="l1" class="fa-brands fa-linkedin-in"></i></a>
         </div>
     </div>
        
@@ -146,23 +146,45 @@
     
 
     <div class="cont" >
-        <label for="name">
+        <label for="fname" >
             Name:
         </label><br><br>
-        <input type="text"/><br><br>
+        <input type="text" id="fname1"/><br><br>
           
-        <label for="email">
+        <label for="email" >
             Email ID:
         </label><br><br>
-        <input type="email"/><br><br>
+        <input type="email" id="email1"/><br><br>
     
-        <label for="contact">
+        <label for="contact" >
             Contact No:
         </label><br><br>
-        <input type="tel"/><br><br>
+        <input type="tel" id="contact1"/><br><br>
     
-        <button type="submit">Send</button>
+        <button type="submit" onclick="Data()">Send</button>
     
+        <script>
+        function Data(){
+            fname=document.getElementById('fname1').value
+            email=document.getElementById('email1').value
+            contact=document.getElementById('contact1').value
+            //console.log(typeof(age))
+    
+            if(fname == "" || fname == null){
+                alert("name required")
+            }
+            else if(email == "" || email == null ){
+                alert("email required")
+            }
+            else if(contact == "" || contact.length!=10)
+            {
+                alert("contact must not be empty and should be 10 digit")
+            }
+            
+    
+        }
+         
+        </script>
     
     
 </div>
